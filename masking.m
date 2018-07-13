@@ -1,10 +1,10 @@
 
 f_pt = 1000; % frequency of pure tone(Hz)
-bandwidth = [inf 20 50 100 200 400 800]; %bandwidth  of noise/notch
-bandpass = false; % if set to false, uses notch noise instead of bandlimited noise
+bandwidth = [0 20 50 100 200 400 800]; %bandwidth  of noise/notch
+bandpass = true; % if set to false, uses notch noise instead of bandlimited noise
 pt_duration = .5; % in seconds
 noise_duration = 3; % in seconds
-pt_amplitude = 0.07; % amplitude of pure tone, normalized between 0 and 1
+pt_amplitude = 0.15; % amplitude of pure tone, normalized between 0 and 1
 noiseAmplitude = 0.5; %(rms) amplitude of noise
 sampleRate = 20000; % samples per second (Hz)
 durationToPlot = 0.1;
